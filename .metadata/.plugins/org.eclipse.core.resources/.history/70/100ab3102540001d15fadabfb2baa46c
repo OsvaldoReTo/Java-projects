@@ -1,0 +1,43 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.generation.exceptions.EmailFormatException;
+import org.generation.util.Employee;
+import org.junit.jupiter.api.Test;
+
+class PruebasUnitarias {
+		Operaciones op = new Operaciones();
+		
+//@Test
+//@DisplayName("Prueba de EmailFormatException en el correo del Employee")	
+//public void probarEmail() {
+//	Employee armando = new Employee("Armando", 20, "", "XAXX000000001", "CASA", "TI", 250);
+//	Exception e = assertThrows(EmailFormatException.class, ()->setEmail("armandoenyahoo"));
+//	assertEquals("El formato")
+//
+		
+		@Test
+		public void probarDivide() {
+			//assertEquals(3, op.divide(9, 0));
+			Exception e =assertThrows(ArithmeticException.class, ()->op.divide(9,0));
+			assertEquals("/ by zero", e.getMessage());
+		}//probarDivide
+		
+		
+		@Test
+		@DislayName("Se prueba el método de suma de la clase Operacionespara la calculadora")
+		public void probarSumas() {
+			assertEquals(107, op.suma(90, 17));
+			assertEquals(6, op.suma(3, 3));
+			assertEquals(4, op.suma(2, 2));
+		}//probarSumas
+
+		@Test
+		public void probarMultiplica() {
+			assertAll("Multiplica", 
+			()-> assertEquals(81, op.multiplica(9, 9)),
+			()-> assertEquals(9, op.multiplica(3, 3)),
+			()-> assertEquals(4, op.multiplica(2, 2))
+			);
+		}//probarMultiplica
+
+}//class PruebasUnitarias

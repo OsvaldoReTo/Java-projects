@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="EcommerceApplicationTests" project="ecommerce" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="org.generation.ecommerce.EcommerceApplicationTests" time="0.539" displayname="EcommerceApplicationTests" uniqueid="[engine:junit-jupiter]/[class:org.generation.ecommerce.EcommerceApplicationTests]">
+    <testcase name="pruebaGets" classname="org.generation.ecommerce.EcommerceApplicationTests" time="0.539" displayname="pruebaGets()" uniqueid="[engine:junit-jupiter]/[class:org.generation.ecommerce.EcommerceApplicationTests]/[method:pruebaGets()]"/>
+  </testsuite>
+</testrun>

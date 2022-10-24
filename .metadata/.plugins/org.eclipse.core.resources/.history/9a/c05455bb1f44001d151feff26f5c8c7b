@@ -1,0 +1,34 @@
+import java.util.Scanner; //faltaba importar java.util.Scanner
+
+public class Codigo5 {
+	
+	public static void main (String[] args) { //falta método Main
+
+	    Scanner s = new Scanner(System.in);//no se indicó argumento para scanner
+	    System.out.print("Introduzca un número: ");//no se ocupó una doble comilla en cierre
+	    String ni = s.nextLine();
+	    int c = Integer.parseInt(ni);//se intenta guardar un dato tipo String en un tipo int
+	    
+	    int afo = 0;
+	    int noAfo = 0;
+	    
+	    while (c > 0) { //sustituir c en cada parte donde aparezca ni, para tomarlo como entero
+		  int digito = (int)(c % 10);
+	      if ((digito == 3) || (digito == 7) || (digito == 8) || (digito == 9)) {
+			afo++;
+	      } else {
+			noAfo++;
+		  
+		  c /= 10; 
+	    }//if-else
+
+	    if (afo > noAfo) {
+	      System.out.println("El " + ni + " es un número afortunado.");//mal escrito el método System.out.println();
+	    } else {
+	      System.out.println("El " + ni + " no es un número afortunado.");
+	    }//if-else
+	    
+	  }//while
+	    s.close();//cierre de scanner
+	 }//main
+	}//class Codigo5

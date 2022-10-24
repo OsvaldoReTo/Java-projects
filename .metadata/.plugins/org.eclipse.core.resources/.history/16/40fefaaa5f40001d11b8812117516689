@@ -1,0 +1,47 @@
+package liveCoding3;
+import java.util.Scanner;
+
+public class MangosNaranjas {
+		private int nM;
+		private int nN;
+	
+
+	public MangosNaranjas(int nM, int nN) {
+			super();
+			this.nM = nM;
+			this.nN = nN;
+		}//constructor
+	
+	
+
+
+	public int getnM() {
+		return nM;
+	}// getnM
+	public void setnM(int nM) {
+		this.nM = nM;
+	}//setnM
+
+	public int getnN() {
+		return nN;
+	}//getnN
+	public void setnN(int nN) {
+		this.nN = nN;
+	} //setnN
+
+	public void cajas(int n1, int n2) {
+
+
+	}
+
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		for (int i = 0; i < 3; i++) {
+			int num =  sc.nextInt();
+			System.out.println(num);
+		}
+
+	}//main
+
+}//MangosNaranjas

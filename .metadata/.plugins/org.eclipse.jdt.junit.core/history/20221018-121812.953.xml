@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="EcommerceApplicationTests" project="ecommerce" tests="3" started="3" failures="0" errors="0" ignored="1">
+  <testsuite name="org.generation.ecommerce.EcommerceApplicationTests" time="1.418" displayname="EcommerceApplicationTests" uniqueid="[engine:junit-jupiter]/[class:org.generation.ecommerce.EcommerceApplicationTests]">
+    <testcase name="pruebaGets" classname="org.generation.ecommerce.EcommerceApplicationTests" time="1.112" displayname="Prueba el método GET de productos con ID 1, 2 y 3 y su contenido" uniqueid="[engine:junit-jupiter]/[class:org.generation.ecommerce.EcommerceApplicationTests]/[method:pruebaGets()]"/>
+    <testcase name="pruebaPut" classname="org.generation.ecommerce.EcommerceApplicationTests" time="0.294" displayname="Prueba el método PUT deproductos y valida el resultado" uniqueid="[engine:junit-jupiter]/[class:org.generation.ecommerce.EcommerceApplicationTests]/[method:pruebaPut()]"/>
+    <testcase name="pruebaDelete" classname="org.generation.ecommerce.EcommerceApplicationTests" time="0.0" ignored="true" displayname="Prueba el método DELETE de productos y el resultado" uniqueid="[engine:junit-jupiter]/[class:org.generation.ecommerce.EcommerceApplicationTests]/[method:pruebaDelete()]"/>
+  </testsuite>
+</testrun>

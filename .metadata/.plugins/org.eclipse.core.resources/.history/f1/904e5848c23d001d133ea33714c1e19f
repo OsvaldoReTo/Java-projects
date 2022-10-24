@@ -1,0 +1,30 @@
+package org.generation.util;
+
+public class Person {
+	private String name;
+	private int age;
+	private String email;
+	private String rfc;
+	private String address;
+	
+	public Person(String name, int age, String email, String address, String rfc) {
+		this.name = name.toUpperCase();;
+		this.age = (age<18)?18:age;
+		this.email = email.toLowerCase();
+		this.address = address;
+		this.rfc = rfc.toUpperCase();
+	//constructor
+	
+	public Person(String name, int age, String email, String address) {
+		this(name, age, email, address, "XAXX010101000");
+	//constructor
+
+	@Override
+	public String toString() {
+		return "Person [name=" + name + ", age=" + age + ", email=" + email + ", rfc=" + rfc + ", address=" + address
+				+ "]";
+	//toString
+
+	
+	
+}// class Person

@@ -1,0 +1,14 @@
+
+public class Productor extends Thread {
+
+	@Override
+	public void run() {
+		super.run();
+		int cont=0;
+		while(cont<EjemploThread.max) {
+			Integer num = Integer.valueOf((int)Math.random()*100);
+			EjemploThread.lista.add(num);
+		}
+	}//run
+	
+}//class Productor

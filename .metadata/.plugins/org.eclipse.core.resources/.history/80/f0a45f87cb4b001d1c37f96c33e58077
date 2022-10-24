@@ -1,0 +1,5 @@
+package org.mexishop.mexishop.service;
+
+public interface Prod_CompraRepository {
+
+}

@@ -1,0 +1,8 @@
+package org.generation.util;
+
+public class Employee extends Person {
+	
+	private String department;
+	private double salary;
+	
+}//class Employee

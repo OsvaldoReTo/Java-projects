@@ -1,0 +1,44 @@
+package com.generation;
+
+import java.util.Scanner; //faltaba importar para función Scanner
+
+public class Codigo4 {
+
+	public static void main(String[] args) { //no poseía un método main para ejecutar el código
+    Scanner s = new Scanner(System.in);//no se tenía que es lo que se iba a escanear
+    
+    System.out.print("Turno del jugador 1 (introduzca piedra, papel o tijeras): ");
+    String j1 = s.nextLine();
+    
+    System.out.print("Turno del jugador 2 (introduzca piedra, papel o tijeras): "); //error en el número del jugador
+    //Scanner s2 = new Scanner(System.in);//no se tenía que es lo que se iba a escanear y es código innecesario
+    String j2 = s.nextLine();//se añadió s2
+    s.close();
+//    System.out.println(j1);
+//    System.out.println(j2);
+    if (j1 == j2) {//había un paréntesis de más
+      System.out.println("Empate");//multiples errores en el cierre de llaves
+    } else {
+      int g = 2;//cambiar asignación inicial ya que empieza con j1, el primer jugador
+      switch(j1) {
+        case "piedra":
+          if (j2 == "tijeras") {
+            g = 1;
+          }
+          break
+        case "papel":
+          if (j2 == "piedra") {
+            g = 1;}
+          break
+        case "tijera":
+          if (j2.equals("papel")) {
+            g = 1;
+          }//if papel
+          break;
+        default:
+      }//switch
+      System.out.println("Gana el jugador " + g);
+    }//else
+    
+   }//main
+}//class Codigo4

@@ -1,0 +1,17 @@
+package org.generation.util;
+
+import org.generation.exceptions.EmailFormatException;
+
+public class Employee extends Person {
+	
+	private String department;
+	private double salary;
+	
+	public Employee(String name, int age, String email, String address, String rfc, String department, double salary)
+			throws EmailFormatException {
+		super(name, age, email, address, rfc);
+		this.department = department;
+		this.salary = salary;
+	}//constructor
+	
+}//class Employee

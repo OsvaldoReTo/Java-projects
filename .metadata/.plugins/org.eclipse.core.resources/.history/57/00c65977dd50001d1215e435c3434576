@@ -1,0 +1,16 @@
+# URL para conectar a la base de datos
+#spring.datasource.url =jdbc:mysql://localhost:3306/mexishop2db
+#spring.datasource.username=root
+#spring.datasource.password=Pa$$w0rd
+
+spring.datasource.url =postgres://pbcnmersdftdzx:36b04726f4470d401dd6be95ebfe710eccb496975341fcd4bd11a06843cbe6ac@ec2-52-70-45-163.compute-1.amazonaws.com:5432/dbu19uva35r9nv
+spring.datasource.username=pbcnmersdftdzx
+spring.datasource.password=36b04726f4470d401dd6be95ebfe710eccb496975341fcd4bd11a06843cbe6ac
+
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQL10Dialect
+logging.level.org.hibernate.SQL=DEBUG
+logging.level.org.hibernate.type=TRACE
+
+
+#create, create-drop, validate, update
+spring.jpa.hibernate.ddl-auto=create

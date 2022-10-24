@@ -1,0 +1,11 @@
+
+public class TestPerson {
+
+	public static void main(String[] args) {
+		Person martin = new Person("Martín Núñez", 22, "martin@email.com", "Casa");
+//		martin.name = "Martín Núñez";
+//		martin.age = 22;
+//		martin.email="martin@email.com";
+		System.out.println(martin.name);
+	}//main
+}//class TestPerson

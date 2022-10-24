@@ -1,0 +1,12 @@
+package org.mexishop.mexishop.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+//POJO
+
+@Entity
+@Table(name="usuario")
+public class Usuario {
+	
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="EcommerceApplicationTests" project="ecommerce" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="org.generation.ecommerce.EcommerceApplicationTests" time="2.072" displayname="EcommerceApplicationTests" uniqueid="[engine:junit-jupiter]/[class:org.generation.ecommerce.EcommerceApplicationTests]">
+    <testcase name="pruebaGets" classname="org.generation.ecommerce.EcommerceApplicationTests" time="1.818" displayname="pruebaGets()" uniqueid="[engine:junit-jupiter]/[class:org.generation.ecommerce.EcommerceApplicationTests]/[method:pruebaGets()]"/>
+    <testcase name="pruebaDelete" classname="org.generation.ecommerce.EcommerceApplicationTests" time="0.249" displayname="pruebaDelete()" uniqueid="[engine:junit-jupiter]/[class:org.generation.ecommerce.EcommerceApplicationTests]/[method:pruebaDelete()]"/>
+  </testsuite>
+</testrun>

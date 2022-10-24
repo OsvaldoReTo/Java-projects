@@ -1,0 +1,17 @@
+
+public class Person {
+	String name;
+	int age;
+	String email;
+	String rfc;
+	String address;
+
+public Person(String name, int age, String email, String address) {
+	this.name = name;
+	this.age = age;
+	this.email = email;
+	this.address = address;
+}
+	
+	
+}// class Person

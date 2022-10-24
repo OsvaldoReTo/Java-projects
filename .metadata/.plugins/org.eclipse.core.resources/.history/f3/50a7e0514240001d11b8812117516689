@@ -1,0 +1,15 @@
+package liveCoding3;
+import java.util.Scanner;
+
+public class MangosNaranjas {
+		int nM;
+		int nN;
+	
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int i =args sc.nextInt();
+
+	}//main
+
+}//MangosNaranjas

@@ -1,0 +1,10 @@
+package org.generation.exceptions;
+
+import org.generation.util.Person;
+
+public class EmailFormatException extends Person{
+		String message;
+	public EmailFormatException(String message) {
+		super(message);
+	}//EmailFormatException
+}//class

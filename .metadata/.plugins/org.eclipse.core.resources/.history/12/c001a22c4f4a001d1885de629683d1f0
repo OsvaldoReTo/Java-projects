@@ -1,0 +1,7 @@
+# URL para conectar a la base de datos
+spring.datasource.url =mysql://localhost:3306/ecommercedb
+spring.datasource.username=root
+spring.datasource.password=Pa$$w0rd
+
+#create, create-drop, validate, update
+spring.jpa.hibernate.ddl-auto=create

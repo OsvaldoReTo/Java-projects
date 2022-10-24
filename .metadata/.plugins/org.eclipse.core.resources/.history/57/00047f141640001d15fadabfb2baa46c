@@ -1,0 +1,17 @@
+import java.util.ArrayList;
+
+public class EjemploThread {
+	public static ArrayList<Integer> lista = new ArrayList<>();
+	public static int max = 100;
+	
+	
+	public static void main(String[] args) {
+		Productor prod1 = new Productor();
+		Productor prod2 =  new Productor();
+		
+		prod1.start();
+		prod2.start();
+
+	}//main
+
+}//class EjemploThread

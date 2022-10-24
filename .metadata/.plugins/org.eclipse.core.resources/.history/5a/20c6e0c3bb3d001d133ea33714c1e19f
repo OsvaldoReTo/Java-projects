@@ -1,0 +1,14 @@
+import org.generation.util.Person;
+
+public class TestPerson {
+
+	public static void main(String[] args) {
+		Person martin = new Person("Martín Núñez", 22, "martin@gmail.com", "Casa");
+		Person mafer = new Person("Mafer Hernández", 21, "mafer@GMAIL.com", "Conocido", "HEGM010101XYZ");
+//		martin.name = "Martín Núñez";
+//		martin.age = 22;
+//		martin.email="martin@gmail.com";
+		System.out.println(martin);
+		System.out.println(mafer);
+	}//main
+}//class TestPerson

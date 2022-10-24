@@ -1,0 +1,27 @@
+
+public class Trapecio implements figuraGeometrica{
+	private String name;
+	private double baseMenor;
+	private double baseMayor;
+	private double lado1;
+	private double lado2;
+	private double lado3;
+	private double lado4;
+	private double altura;
+	
+	public Trapecio(String name, double baseMenor, double baseMayor, double lado1, double lado2, double lado3,
+			double lado4) {
+		super();
+		this.name = name;
+		this.baseMenor = baseMenor;
+		this.baseMayor = baseMayor;
+		this.lado1 = lado1;
+		this.lado2 = lado2;
+		this.lado3 = lado3;
+		this.lado4 = lado4;
+		this.altura = altura;
+	}
+	
+	
+	
+}//class Trapecio

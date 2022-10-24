@@ -1,0 +1,32 @@
+import org.generation.exceptions.EmailFormatException;
+import org.generation.util.Person;
+
+public class TestPerson {
+
+	public static void main(String[] args) {
+		Person martin = null;
+		Person mafer = null;
+		
+		try {
+		mafer = new Person("Mafer Hernández", 21, "mafer@GMAIL.com", "Conocido", "HEGM010101XYZ");
+		//mafer.email="";
+		} catch (EmailFormatException e) {
+			//e.printStackTrace();
+			System.out.println(e.getMessage());
+		}
+		
+		try {
+		martin = new Person("Martín Núñez", 22, "martingmailCOM", "Casa");
+		} catch (EmailFormatException e) {
+			//e.printStackTrace();
+			System.out.println(e.getMessage());
+		}
+		
+		
+//		martin.name = "Martín Núñez";
+//		martin.age = 22;
+//		martin.email="martin@gmail.com";
+		System.out.println(martin.toString());
+		System.out.println(mafer);
+	}//main
+}//class TestPerson

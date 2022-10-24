@@ -1,0 +1,15 @@
+
+public class CicloError {
+
+	public static void main(String[] args) {
+		int max= 100;
+		int cont = 0;
+		int total = 0;
+		while (cont>100) {
+			total =+ cont;
+		}//while
+		
+		System.out.println(total);
+
+	}//main
+}// class CicloError

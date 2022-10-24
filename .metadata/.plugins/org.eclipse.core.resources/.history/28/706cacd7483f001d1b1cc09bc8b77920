@@ -1,0 +1,50 @@
+import org.generation.exceptions.EmailFormatException;
+import org.generation.util.Employee;
+import org.generation.util.Manager;
+import org.generation.util.Person;
+
+public class TestPerson {
+
+	public static void main(String[] args) {
+		Employee martin = null;
+		Employee mafer = null;
+		Employee alam = null;
+		
+		try {
+		mafer = new Employee("Mafer Hernández", 21, "mafer@GMAIL.com", "Conocido", 
+				"HEGM010101XYZ", "IT", 500.50);
+		mafer.setAge(15);
+		System.out.println(mafer);
+		} catch (EmailFormatException e) {
+			//e.printStackTrace();
+			System.out.println(e.getMessage());
+		}
+		
+		try {
+		martin = new Employee("Martín Núñez", 22, "123456789@facultad.unam.mx", "Casa",
+				"XAXX000000001", "IT", 389.20);
+		System.out.println(martin.toString());
+		} catch (EmailFormatException e) {
+			//e.printStackTrace();
+			System.out.println(e.getMessage());
+			
+		}
+		
+	try	{alam = new Manager("Alam Hernández", 24, "donalama@gmail.com", "Domicilio Desconocido",
+							"XAXX000000001", "IT", 750.21, 23, 250.50);
+			System.out.println(alam);
+		} catch (EmailFormatException e) {
+			e.printStackTrace();
+		
+		}
+//		martin.name = "Martín Núñez";
+//		martin.age = 22;
+//		martin.email="martin@gmail.com";
+		
+		
+		
+		mafer.calculateSalary(30);
+		martin.calculateSalary(30);
+		alam.calculateSalary(30);
+	}//main
+}//class TestPerson

@@ -1,0 +1,8 @@
+package org.generation.exceptions;
+
+public class EmailFormatException {
+		String message;
+	public EmailFormatException(String message) {
+		super();
+	}//EmailFormatException
+}//class

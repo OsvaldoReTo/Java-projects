@@ -1,0 +1,13 @@
+import java.util.ArrayList;
+
+public class EjemploThread {
+	public static ArrayList<Integer> lista = new ArrayList<>();
+	public static int max = 100;
+	
+	
+	public static void main(String[] args) {
+		
+
+	}//main
+
+}//class EjemploThread

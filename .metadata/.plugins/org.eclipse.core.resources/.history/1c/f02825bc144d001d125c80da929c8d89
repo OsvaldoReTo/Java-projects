@@ -1,0 +1,5 @@
+package org.mexishop.mexishop.model;
+
+public class Producto {
+
+}

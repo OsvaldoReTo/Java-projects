@@ -1,0 +1,19 @@
+package org.mexishop.mexishop.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class UsuarioService {
+	private final UsuarioRepository usuarioRepository;
+	
+	@Autowired
+	public UsuarioService(UsuarioRepository usuarioRepository) {
+		super();
+		this.usuarioRepository = usuarioRepository;
+	}//constructor
+	
+	
+	
+
+}// class UsuarioService

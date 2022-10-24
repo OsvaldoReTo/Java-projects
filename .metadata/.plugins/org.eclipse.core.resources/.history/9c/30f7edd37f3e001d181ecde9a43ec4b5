@@ -1,0 +1,61 @@
+package org.generation.util;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import org.generation.exceptions.EmailFormatException;
+
+public class Person {
+	private String name;
+	private int age;
+	private String email;
+	private String rfc;
+	private String address;
+	
+	public Person(String name, int age, String email, String address, String rfc)
+			throws EmailFormatException{
+		this.name = name.toUpperCase();;
+		this.age = (age<18)?18:age;
+		this.email = validEmail(email.toLowerCase());
+		this.address = address;
+		this.rfc = rfc.toUpperCase();
+	}//constructor
+	
+	private String validEmail(String email) throws EmailFormatException {
+		String res ="jdoe@hotmail.com";
+		Pattern regex = Pattern.compile("^[a-z_0-9.%+-]+@[a-z0-9.-]+\\.[a-z]{2,6}", 
+				Pattern.CASE_INSENSITIVE);
+		Matcher matcher = regex.matcher(email);
+		if (matcher.matches()) {//si el correo es válido
+			res = email;
+		}else {
+			throw new EmailFormatException("El formato del correo no es válido ["+email +"]");
+		}// if email válido
+//		if(email.contains("@")) {
+			
+//		}// if contains @
+		return res;
+	}//validEmail
+	
+	public Person(String name, int age, String email, String address) 
+			throws EmailFormatException {
+		this(name, age, email, address, "XAXX010101000");
+	}//constructor
+	
+	public void setEmail(String email) throws EmailFormatException{
+		this.email = validEmail(email.toLowerCase());
+	}
+	
+	public String getEmail(){
+		return email.toLowerCase();
+	}
+
+	@Override
+	public String toString() {
+		return "Person [name=" + name + ", age=" + age + ", email=" + email + ", rfc=" + rfc + ", address=" + address
+				+ "]";
+	}//toString
+
+	
+	
+}// class Person

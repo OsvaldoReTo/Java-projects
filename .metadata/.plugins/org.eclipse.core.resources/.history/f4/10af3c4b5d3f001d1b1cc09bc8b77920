@@ -1,0 +1,5 @@
+
+public interface figuraGeometrica {
+	public String getName();
+	
+}

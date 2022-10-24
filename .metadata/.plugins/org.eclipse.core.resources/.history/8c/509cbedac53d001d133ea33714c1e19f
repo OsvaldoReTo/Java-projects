@@ -1,0 +1,17 @@
+
+public class TestException {
+
+	public static void main(String[] args) {
+		int a = 10;
+		int b = 0;
+		int c = 0;
+		c=a/b;
+//		try {
+//			c =a/b;
+//		}catch (ArithmeticException ae){
+//			System.out.println(ae.getMessage());
+//		}//catch
+		System.out.println(c);
+	}//main
+
+}//class  TestException

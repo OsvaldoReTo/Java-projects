@@ -1,0 +1,15 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class PruebasUnitarias {
+		Operaciones op = new Operaciones();
+		
+		@Test
+		public void probarSumas() {
+			assertEquals(4, op.suma(2, 2));
+			assertEquals(107, op.suma(90, 17));
+		}//probarSumas
+
+
+}//class PruebasUnitarias

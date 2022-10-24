@@ -1,0 +1,10 @@
+
+public class Trapecio implements figuraGeometrica{
+	private String name;
+	private double baseMenor;
+	private double baseMayor;
+	private double lado1;
+	private double lado2;
+	private double lado3;
+	private double lado4;
+}

@@ -1,0 +1,26 @@
+
+public class TestException {
+
+	public static void main(String[] args) {
+		int a = 10;
+		int b = 3;
+		int c = 0;
+		int[] enteros = {2,4,8};
+		try {
+			c =a/b;
+			c =c*enteros[3];
+		} catch (ArithmeticException ae){
+			System.out.println(ae.getMessage());
+			b=1;
+			c=a/b;
+		} catch (ArrayIndexOutOfBoundsException aioobe) {
+			System.out.println(aioobe.getMessage());
+		} catch (IndexOutOfBoundsException ioobe){
+			System.out.println(ioobe.getMessage());
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}//catch
+		System.out.println(c);
+	}//main
+
+}//class  TestException
